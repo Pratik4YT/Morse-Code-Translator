@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Translator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="icon2.png">
+</head>
+<body background="./copy.jpg">
+
+
+    <nav class="navbar">
+        
+        <li>
+            <div>
+         <a href="Introduction.html" target="_parent"> <button class="bt-1">Information of Morse</button> </a>
+        <button class="bt-2">Translator</button>
+        <a href="basic morse.html" target="_parent"><button class="bt-3">Basic Morse code </button></a>
+            </div>
+    </li>
+</nav>
+<hr>
+
+    <div class="container-fluid">
+        <div class="overlay">
+            <h1>Morse Code Translator</h1>
+
+            <div id="rules" class="rules">
+              
+            </div>
+
+            <div id="menu" class="language">
+                <h2>Choose Input language</h2>
+                <select id="menulang" class="lang">
+                    <option value="english">English</option>
+                    <option value="morse">Morse</option>
+                </select>
+            </div>
+
+            <div id="english" class="message">
+                <h3>Enter input message below:</h3>
+                <textarea id="text1" class="textbox" rows="10" cols="60"></textarea>
+                <h3 id="stat1">You've written 0 words and 0 characters.</h3>
+            </div>
+    
+            <div id="morse" class="message">
+                <h3>Morse message is:</h3>
+                <textarea id="text2" class="textbox" rows="10" cols="60" readonly></textarea>
+                <h3 id="stat2">Morse message contains 0 characters.</h3>
+            </div>
+
+            <!--<script src="src/morseDict.js"></script>-->
+            <!--<script src="src/morse-translator.js"></script>-->
+            <!--<script src="src/app.js"></script>-->
+            <script src="src/bundle.js"></script>
+            <!--<script type="text/javascript" nomodule src="js/morse-translator.js"></script>-->
+            <!--<script type="text/javascript" nomodule src="js/app.js"></script>-->
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
